@@ -23,11 +23,11 @@ async def send_daily_message():
     message = "Бугин сал кештеу келем аби "  # Текст сообщения
     await bot.send_message(chat_id=chat_id, text=message)
     #await bot.send_message(chat_id=chat_id1, text=message)
-    await bot.send_message(chat_id=chat_id2, text=message)
+    #await bot.send_message(chat_id=chat_id2, text=message)
 
 
 # Задаем время, когда будет отправляться сообщение
-send_time = time(hour=13, minute=15, second=0)
+send_time = time(hour=13, minute=25, second=0)
 
 
 # Запускаем бесконечный цикл, который проверяет текущее время и отправляет сообщение, если оно соответствует заданному времени
