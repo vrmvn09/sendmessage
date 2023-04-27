@@ -6,7 +6,7 @@ from aiogram.utils import executor
 from datetime import datetime, time
 
 # Ваш токен бота
-TOKEN = '6073631256:AAExuwbG1-ebpindGcdMnz20eoxZNYSfSow'
+TOKEN = 'BOT_TOKEN'
 
 # Создаем экземпляр бота
 bot = Bot(token=TOKEN)
@@ -17,17 +17,13 @@ dp = Dispatcher(bot, storage=storage)
 
 
 async def send_daily_message():
-    chat_id = "1051628604"
-    chat_id1 = "570997397"
-    chat_id2 = "625597937"  # ID чата, куда будем отправлять сообщение
-    message = "Бугин сал кештеу келем аби "  # Текст сообщения
+    chat_id = "CHAT_ID" # ID чата, куда будем отправлять сообщение
+    message = "YOUR_MESSAGE "  # Текст сообщения
     await bot.send_message(chat_id=chat_id, text=message)
-    #await bot.send_message(chat_id=chat_id1, text=message)
-    #await bot.send_message(chat_id=chat_id2, text=message)
 
 
 # Задаем время, когда будет отправляться сообщение
-send_time = time(hour=13, minute=25, second=0)
+send_time = time(hour=12, minute=00, second=0)
 
 
 # Запускаем бесконечный цикл, который проверяет текущее время и отправляет сообщение, если оно соответствует заданному времени
